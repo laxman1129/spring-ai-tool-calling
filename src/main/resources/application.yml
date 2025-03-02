@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: spring-ai-function-calling
+
+  ai:
+    ollama:
+      chat:
+        model: llama3.3
+      #model: llama3.1
+      #model: llama3
+      #model: deepseek-r1
+      #model: phi3
+      init:
+        pull-model-strategy: when_missing
+
+
+application:
+  aiapp:
+    apiNinjasKey : ${API_NINJAS_KEY}
